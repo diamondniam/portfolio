@@ -12,6 +12,7 @@ body {
 }
 
 .header {
+    min-height: 900px;
     height: 100%;
 }
 
@@ -64,4 +65,38 @@ body {
     top: 240px;
     left: 40%;
     transform: rotate(-10deg);
+}
+
+.about {
+    margin-left: 10%;
+    min-height: 700px;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #0C0B0B;
+    font-family: cairo, sans-serif;
+}
+
+.about-left {
+    margin-right: 150px;
+}
+
+.strip-right {
+    position: absolute;
+    top: 750px;
+    left: 12%;
+}
+
+.about-text {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: right;
+}
+
+.about-strips {
+    position: absolute;
+    top: 1500px;
+    left: 650px;
 }
