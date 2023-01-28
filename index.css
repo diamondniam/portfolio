@@ -100,3 +100,97 @@ body {
     top: 1500px;
     left: 650px;
 }
+
+.projects {
+    margin: 0 5% 0 7%;
+    min-height: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #0C0B0B;
+    font-family: cairo, sans-serif;
+}
+
+.projects-title {
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: underline;
+    color: #0C0B0B;
+}
+
+.project-one, .project-two, .project-three {
+    width: 300px;
+}
+
+.project-one-title, .project-two-title, .project-three-title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project-one-more, .project-two-more, .project-three-more {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.project-one-title, .project-three-title {
+    margin: 20px 0 10px 0;
+}
+
+.project-two {
+    text-align: right;
+}
+
+.project-two-more {
+    margin-bottom: 70px;
+}
+
+.project-one-more, .project-three-more {
+    margin-bottom: 50px;
+}
+
+.project-two-title, .project-two-text {
+    margin: 0 0 10px 0;
+}
+
+.project-one-text, .project-two-text, .project-three-text {
+    font-size: 15px;
+    margin-bottom: 10px;
+    width: 250px;
+} 
+
+.project-two {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.project-one-strip, .project-two-strip, .project-three-strip {
+    position: absolute;
+}
+
+.project-one-strip img, .project-two-strip img, .project-three-strip img {
+    width: 125px;
+}
+
+.project-one-strip {
+    top: 2200px;
+    left: 42%;
+    transform: rotate(-150deg);
+}
+
+.project-two-strip {
+    top: 1780px;
+    left: 50%;
+    transform: rotate(20deg);
+}
+
+.project-three-strip {
+    top: 2200px;
+    left: 89%;
+    transform: rotate(-170deg);
+}
