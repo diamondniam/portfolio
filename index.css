@@ -194,3 +194,48 @@ a {
     left: 89%;
     transform: rotate(-170deg);
 }
+
+.connect {
+    min-height: 300px;
+    margin: 0 0 0 27%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #0C0B0B;
+    font-family: cairo, sans-serif;
+}
+
+.connect-back {
+    margin: 0 15% 0 7%;
+}
+
+.connect-input {
+    margin-top: 25px;
+    width: 667px;
+    height: 60px;
+    border-radius: 35px;
+    border: solid #0C0B0B 2px;
+    color: #0C0B0B;
+    font-family: cairo, sans-serif;
+    font-size: 17px;
+    padding: 0 30px 0 30px;
+    background-color: white;
+    transition: background-color 0.2s ease-out 100ms;
+}
+
+.connect-input:hover {
+    background-color: #F9F9F9;
+    transition: background-color 0.2s ease-out 100ms;
+}
+
+.connect-input:focus {
+    outline: none;
+    background-color: #F9F9F9;
+}
+
+.connect-strip {
+    position: absolute;
+    top: 2550px;
+    left: 12%;
+}
