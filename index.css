@@ -196,7 +196,7 @@ a {
 }
 
 .connect {
-    min-height: 300px;
+    min-height: 250px;
     margin: 0 0 0 27%;
     display: flex;
     justify-content: space-between;
@@ -238,4 +238,28 @@ a {
     position: absolute;
     top: 2550px;
     left: 12%;
+}
+
+.footer {
+    min-height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin: 0 15% 0 15%;
+
+    color: #0C0B0B;
+    font-family: cairo, sans-serif; 
+}
+
+.footer-logo {
+    margin: 0 30px 0 30px;
+}
+
+.credit-one, .credit-two {
+    width: 350px;
+}
+
+.credit-one {
+    text-align: right;
 }
