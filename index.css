@@ -1,15 +1,48 @@
+/* main preferences */
+
 body {
     margin: 0;
     padding: 0;
 
-    color: #F9F9F9;
+    color: #0C0B0B;
+
+    font-family: cairo, sans-serif;
+    font-style: normal;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* animation of footer logo */
+
+@keyframes logo-anim {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* "a" preferences */
+
+a {
+    text-decoration: none;
+    color: #0C0B0B;
+}
+
+.projects a {
+    text-decoration: underline;
+    color: #0C0B0B;
+}
+
+/* main styles */
 
 .container {
     margin: 0 auto;
     width: 100%;
     height: 100%;
 }
+
+/* header */
 
 .header {
     min-height: 900px;
@@ -20,7 +53,6 @@ body {
     margin: 0 auto;
     width: 80%;
     height: 220px;
-    /* background-color: rgb(192, 192, 192); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +63,39 @@ body {
     align-items: center;
     gap: 40px;
     color: #0C0B0B;
-    font-family: cairo, sans-serif;
-    font-style: normal;
     font-weight: 200;
     font-size: 22px;
+}
+
+.nav-logo {
+    position: absolute;
+}
+
+.logo {
+    transition: all .2s;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+}
+
+.nav-about-me, .nav-projects {
+    transition: all .2s;
+}
+
+.nav-about-me:hover, .nav-projects:hover {
+    border-bottom: 1.5px solid #0C0B0B;
+    padding-bottom: 5px;
+}
+
+.nav-contact-img {
+    border: 1.5px solid rgba(5, 5, 5, 0);
+    border-radius: 35px;
+    transition: all .2s;
+}
+
+.nav-contact-img:hover {
+    border: 1.5px solid #0C0B0B;
 }
 
 .header-inner {
@@ -67,6 +128,8 @@ body {
     transform: rotate(-10deg);
 }
 
+/* about part */
+
 .about {
     margin-left: 10%;
     min-height: 700px;
@@ -74,9 +137,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    color: #0C0B0B;
-    font-family: cairo, sans-serif;
 }
 
 .about-left {
@@ -101,24 +161,18 @@ body {
     left: 650px;
 }
 
+/* projects part */
+
 .projects {
     margin: 0 5% 0 7%;
     min-height: 900px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    color: #0C0B0B;
-    font-family: cairo, sans-serif;
 }
 
 .projects-title {
     margin-right: 40px;
-}
-
-a {
-    text-decoration: underline;
-    color: #0C0B0B;
 }
 
 .project-one, .project-two, .project-three {
@@ -195,71 +249,95 @@ a {
     transform: rotate(-170deg);
 }
 
-.connect {
+#projects-link {
+    position: relative;
+    top: -190px;
+    visibility: hidden;
+}
+
+/* contact part */
+
+.contact {
     min-height: 250px;
     margin: 0 0 0 27%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    color: #0C0B0B;
-    font-family: cairo, sans-serif;
 }
 
-.connect-back {
+.contact-back {
     margin: 0 15% 0 7%;
 }
 
-.connect-input {
+.contact-input {
     margin-top: 25px;
     width: 667px;
     height: 60px;
     border-radius: 35px;
     border: solid #0C0B0B 2px;
-    color: #0C0B0B;
-    font-family: cairo, sans-serif;
     font-size: 17px;
     padding: 0 30px 0 30px;
     background-color: white;
     transition: background-color 0.2s ease-out 100ms;
 }
 
-.connect-input:hover {
+.contact-input:hover {
     background-color: #F9F9F9;
     transition: background-color 0.2s ease-out 100ms;
 }
 
-.connect-input:focus {
+.contact-input:focus {
     outline: none;
     background-color: #F9F9F9;
 }
 
-.connect-strip {
+.contact-strip {
     position: absolute;
     top: 2550px;
     left: 12%;
 }
 
+/* footer part */
+
 .footer {
     min-height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 50px;
     margin: 0 15% 0 15%;
-
-    color: #0C0B0B;
-    font-family: cairo, sans-serif; 
 }
 
 .footer-logo {
-    margin: 0 30px 0 30px;
+    position: absolute;
+    transition: all .2s;
+
+    animation: logo-anim 8s infinite;
+    animation-delay: 5s;
+}
+
+.footer-logo img {
+    transition: all .2s;
+}
+
+.footer-logo img:hover{
+    height: auto;
+    width: 62px;
 }
 
 .credit-one, .credit-two {
     width: 350px;
+    margin: 0 10% 0 10%;
 }
 
 .credit-one {
     text-align: right;
+}
+
+.diamond-niam:hover, .vomnt:hover{
+    color: #e34548;
+}
+
+.diamond-niam, .vomnt {
+    transition: all .2s;
 }
